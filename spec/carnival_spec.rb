@@ -42,7 +42,6 @@ RSpec.describe Ride do
     bob.add_interest('Ferris Wheel')
     bob.add_interest('Bumper Cars')
     sally.add_interest('Scrambler')
-
     expect(jeffco_fair.recommend_rides(bob)).to eq([ferris_wheel, bumper_cars])
     expect(jeffco_fair.recommend_rides(sally)).to eq([scrambler])
   end
